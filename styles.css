@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #434646;
+    color: rgb(110, 255, 233);
+    line-height: 1.6;
+}
+
+.navigation {
+    list-style-type: none;
+    text-align: center;
+}
+
+.navigation a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[href] {
+    text-decoration: underline;
+    color: #4a9ef8;
+}
+
+a:hover {
+    color: #0011ff;
+    background-color: white;
+}
+
+#about {
+    font-style: italic;
+}
+
+p::first-letter {
+    font-size: 150%;
+    color: #ff2200;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #6c757d;
+}
