@@ -1,8 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #434646;
+    /*background-image: url(images/mypc.jpg);
+    background-repeat: no-repeat;*/
+    background: linear-gradient(rgb(193, 10, 10), rgb(68, 64, 64));
     color: rgb(110, 255, 233);
     line-height: 1.6;
+}
+
+#banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 .navigation {
@@ -27,8 +36,15 @@ a:hover {
     background-color: white;
 }
 
-#about {
+p{
+    margin: 10px;
+}
+
+p#about {
     font-style: italic;
+    margin: 50px 20px;
+    border: 5px solid darkgray;
+    border-radius: 10px;
 }
 
 p::first-letter {
@@ -40,4 +56,5 @@ footer {
     text-align: center;
     font-size: 0.8rem;
     color: #6c757d;
+    padding: 100px;
 }
