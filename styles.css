@@ -17,13 +17,23 @@ body {
 .navigation {
     list-style-type: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    width: 22%;
 }
 
 .navigation a {
-    display: inline-block;
+    display: block;
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
+    border-style: double;
+    border-radius: .5em;
+    border-color: darkgray;
 }
 
 a[href] {
@@ -34,6 +44,11 @@ a[href] {
 a:hover {
     color: #0011ff;
     background-color: white;
+}
+
+h3{
+    color: lightgray;
+    text-decoration: underline;
 }
 
 p{
@@ -47,14 +62,20 @@ p#about {
     border-radius: 10px;
 }
 
-p::first-letter {
-    font-size: 150%;
-    color: #ff2200;
-}
-
 footer {
     text-align: center;
     font-size: 0.8rem;
     color: #6c757d;
     padding: 100px;
+}
+
+@media (max-width: 720px){
+    .navigation li {
+        display: block;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
 }
