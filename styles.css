@@ -69,10 +69,10 @@ footer {
     padding: 100px;
 }
 
-@media (max-width: 720px){
+@media (max-width: 720px ){
     .navigation li {
         display: block;
-        width: 100%;
+        width: 95%;
     }
 
     h1 {
