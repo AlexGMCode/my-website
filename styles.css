@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
 }
 
-#banner{
+#banner {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -19,11 +19,14 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    display:flex;
+    flex-direction: row;
 }
 
 .navigation li {
-    display: inline-block;
-    width: 22%;
+    flex-basis:25%;
+    /*display: inline-block;
+    width: 22%;*/
 }
 
 .navigation a {
@@ -46,12 +49,12 @@ a:hover {
     background-color: white;
 }
 
-h3{
+h3 {
     color: lightgray;
     text-decoration: underline;
 }
 
-p{
+p {
     margin: 10px;
 }
 
@@ -69,8 +72,35 @@ footer {
     padding: 100px;
 }
 
-@media (max-width: 720px ){
+div#sections {
+    display:flex;
+    flex-direction: row;
+}
+
+#hardware-section {
+    flex-basis: 33%;
+}
+
+#software-section {
+    flex-basis: 33%;
+}
+
+#plugins-section {
+    flex-basis: 33%;
+}
+
+@media (max-width: 720px) {
+
+    .navigation {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display:block;
+        flex-direction: column;
+    }
     .navigation li {
+        /*display:flex;*/
         display: block;
         width: 95%;
     }
