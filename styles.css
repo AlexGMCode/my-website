@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
 }
 
-#banner{
+#banner {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -17,13 +17,26 @@ body {
 .navigation {
     list-style-type: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+}
+
+.navigation li {
+    flex-basis:25%;
+    /*display: inline-block;
+    width: 22%;*/
 }
 
 .navigation a {
-    display: inline-block;
+    display: block;
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
+    border-style: double;
+    border-radius: .5em;
+    border-color: darkgray;
 }
 
 a[href] {
@@ -36,25 +49,30 @@ a:hover {
     background-color: white;
 }
 
-p{
-    margin: 10px;
-}
-
-p#about {
-    font-style: italic;
-    margin: 50px 20px;
-    border: 5px solid darkgray;
-    border-radius: 10px;
-}
-
-p::first-letter {
-    font-size: 150%;
-    color: #ff2200;
-}
-
 footer {
     text-align: center;
     font-size: 0.8rem;
     color: #6c757d;
     padding: 100px;
+}
+
+@media (max-width: 720px) {
+
+    .navigation {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display:block;
+        flex-direction: column;
+    }
+    .navigation li {
+        /*display:flex;*/
+        display: block;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
 }
