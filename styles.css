@@ -1,3 +1,6 @@
+/* CSS for common elements for all web pages, including navigation, consitent fonts, and common footers */
+/* specific css for each page can be found in the css folder */
+
 body {
     font-family: Arial, sans-serif;
     /*background-image: url(images/mypc.jpg);
@@ -19,12 +22,12 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    display:flex;
+    display: flex;
     flex-direction: row;
 }
 
 .navigation li {
-    flex-basis:25%;
+    flex-basis: 25%;
     /*display: inline-block;
     width: 22%;*/
 }
@@ -63,9 +66,10 @@ footer {
         text-align: center;
         margin: 0;
         padding: 0;
-        display:block;
+        display: block;
         flex-direction: column;
     }
+
     .navigation li {
         /*display:flex;*/
         display: block;
