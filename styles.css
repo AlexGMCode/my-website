@@ -49,44 +49,11 @@ a:hover {
     background-color: white;
 }
 
-h3 {
-    color: lightgray;
-    text-decoration: underline;
-}
-
-p {
-    margin: 10px;
-}
-
-p#about {
-    font-style: italic;
-    margin: 50px 20px;
-    border: 5px solid darkgray;
-    border-radius: 10px;
-}
-
 footer {
     text-align: center;
     font-size: 0.8rem;
     color: #6c757d;
     padding: 100px;
-}
-
-div#sections {
-    display:flex;
-    flex-direction: row;
-}
-
-#hardware-section {
-    flex-basis: 33%;
-}
-
-#software-section {
-    flex-basis: 33%;
-}
-
-#plugins-section {
-    flex-basis: 33%;
 }
 
 @media (max-width: 720px) {

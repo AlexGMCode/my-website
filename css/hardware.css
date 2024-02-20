@@ -1,0 +1,10 @@
+.info {
+    font-style: italic;
+    font-size: .8em;
+}
+
+#pc-parts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
