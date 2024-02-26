@@ -1,0 +1,42 @@
+.lore {
+    font-style: italic;
+    font-size: .8em;
+    padding: .2em;
+    font-weight: lighter;
+}
+
+.gameplay{
+    font-weight: lighter;
+    font-size: .8em;
+    padding: .2em;
+}
+
+#tanks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+#healers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+#melee{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+#physicalrange{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+#magicalrange{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
