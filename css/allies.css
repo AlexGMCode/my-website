@@ -6,60 +6,73 @@
     text-align: left;
 }
 
-.gameplay {
+.gameplay{
     font-weight: lighter;
     font-size: .8em;
     padding: .2em;
     text-align: left;
 }
 
-#crafters {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-}
-
-#gatherers {
+#scions{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
 }
 
-h3 {
+#leaders{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+
+h3{
     text-align: center;
 }
 
-h4 img {
+h4 img{
     max-height: 20em;
     max-width: fit-content;
 }
 
-#crafters h4 {
+#scions h4{
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
     border-style: solid;
     border-radius: 1em;
     margin: .5em;
-    background-color: gray;
+    background-color: darkcyan;
 }
 
-#gatherers h4 {
+#leaders h4{
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
     border-style: solid;
     border-radius: 1em;
     margin: .5em;
-    background-color: gray;
+}
+
+#gridania{
+    background-color: #D3A60D;
+}
+
+#uldah{
+    background-color: #1F3645;
+}
+
+#limsa{
+    background-color: #C01B22;
 }
 
 @media (max-width: 720px) {
-    #crafters {
+
+    #scions{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
     }
-
-    #gatherers {
+    
+    #leaders{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
