@@ -13,18 +13,13 @@ p#about {
 }
 
 div#sections {
-    display:flex;
-    flex-direction: row;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-#hardware-section {
-    flex-basis: 33%;
-}
-
-#software-section {
-    flex-basis: 33%;
-}
-
-#plugins-section {
-    flex-basis: 33%;
+@media (max-width: 720px) {
+    div#sections {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
 }
