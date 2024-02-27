@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
     /*background-image: url(images/mypc.jpg);
     background-repeat: no-repeat;*/
-    background: linear-gradient(rgb(193, 10, 10), rgb(68, 64, 64));
+    background: linear-gradient(rgb(59, 57, 57), rgb(0, 0, 0));
     color: rgb(110, 255, 233);
     line-height: 1.6;
 }
@@ -28,6 +28,7 @@ body {
 
 .navigation li {
     flex-basis: 25%;
+    margin: .1em;
     /*display: inline-block;
     width: 22%;*/
 }
@@ -64,7 +65,7 @@ footer {
     .navigation {
         list-style-type: none;
         text-align: center;
-        margin: 0;
+        margin: .1em;
         padding: 0;
         display: block;
         flex-direction: column;

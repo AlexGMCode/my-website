@@ -4,236 +4,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hardware</title>
+    <title>Combat Jobs</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/combat.css">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!--icons-->
+    <script src="https://kit.fontawesome.com/5c7085b3b5.js" crossorigin="anonymous"></script>
 </head>
+<!-- job artwork at https://press.na.square-enix.com/Final-Fantasy-XIV-Endwalker/Focus/Job-Artwork-by-Yusuke-Mogi -->
 
 <body>
+    <!-- ffxiv tooltips-->
+    <script src="https://lds-img.finalfantasyxiv.com/pc/global/js/eorzeadb/loader.js?v3"></script>
+
     <header>
         <img id="banner" src="../images/ffxiv_banner.jpg" alt="a picture of final fantasy xiv characters" height="75%"
             width="75%">
         <h1>Enhancing your experience for FFXIV</h1>
         <ul class="navigation">
             <li class="navigation-link"><a href="../index.html">Home</a></li>
-            <li class="navigation-link"><a href="hardware.html">Hardware</a></li>
-            <li class="navigation-link"><a href="software.html">Software (external)</a></li>
+            <li class="navigation-link"><a href="combat.html">Combat Jobs</a></li>
+            <li class="navigation-link"><a href="craftandgather.html">Crafters and Gatherers</a></li>
             <li class="navigation-link"><a href="plugins.html">Plugins (internal)</a></li>
         </ul>
     </header>
 
     <main>
-        <h2>Combat Jobs</h2>
-        <a href="https://pcpartpicker.com/" target="_blank">PCPartPicker.com (opens in new tab)</a>
-        <br>
-        <img src="../images/mypc.jpg" alt="A picture of the writer's computer" height="35%" width="35%" class="parts">
+        <ul class="quick-nav">
+            <li class="quick-link"><a href="#tanks">Tanks</a></li>
+            <li class="quick-link"><a href="#healers">Healers</a></li>
+            <li class="quick-link"><a href="#melee">Melee DPS</a></li>
+            <li class="quick-link"><a href="#range">Physical Ranged DPS</a></li>
+            <li class="quick-link"><a href="#casters">Magical Ranged DPS</a></li>
+        </ul>
+        <h3>Tanks <i class="fa-solid fa-shield"></i></h3>
         <div id="tanks">
-            <h3>Paladin<br>
+            <h4>Paladin <img src="../images/icons/Paladin.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Paladins are the paragons of justice, sworn defenders of the weak, and protectors of the realm. They
+                    follow a strict code of honor and are often associated with knights in shining armor.
                 </p>
-                <br>
+                <img src="../images/jobs/pld.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Paladins excel in damage mitigation and party protection. They can cast shields on themselves and
+                    allies, and have a balanced mix of physical and magical defensive abilities.
                 </p>
-            </h3>
-            <h3>Warrior<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/90a79bf83dc/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Warrior <img src="../images/icons/Warrior.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Warriors are fierce combatants who harness the primal rage within them to demolish their foes. They
+                    are often from tribal backgrounds, where strength and the will to survive are paramount.
                 </p>
-                <br>
+                <img src="../images/jobs/war.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Warriors specialize in high health pools and self-sustain. They can absorb massive amounts of damage
+                    and have abilities that allow them to recover health during battle.
                 </p>
-            </h3>
-            <h3>Dark Knight<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/75e8ccec1f4/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Dark Knight <img src="../images/icons/DarkKnight.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Dark Knights are brooding warriors who embrace the darkness to fight against injustice and protect
+                    the oppressed. Their power comes from a forbidden source, which they use judiciously.
                 </p>
-                <br>
+                <img src="../images/jobs/drk.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Dark Knights use their health as a resource for powerful attacks and have a mix of magical and
+                    physical abilities. They excel in area-of-effect damage and have strong defensive cooldowns.
                 </p>
-            </h3>
-            <h3>Gunbreaker<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/f194ac09168/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Gunbreaker <img src="../images/icons/Gunbreaker.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Gunbreakers wield gunblades, a unique weapon that combines the blade with a firearm. They are
+                    mercenaries and soldiers of fortune, often with complex pasts and unmatched bravery.
                 </p>
-                <br>
+                <img src="../images/jobs/gnb.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Gunbreakers have a fast-paced playstyle, focusing on chaining abilities for high damage output while
+                    maintaining defense. They utilize cartridges to execute powerful attacks and combos.
                 </p>
-            </h3>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/e3f6c6209c3/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
         </div>
+        <h3>Healers <i class="fa-solid fa-notes-medical"></i></h3>
         <div id="healers">
-            <h3>White Mage<br>
+            <h4>White Mage <img src="../images/icons/WhiteMage.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    White Mages are the embodiment of purity and healing. They call upon the power of nature and the
+                    light to mend wounds and purify evil. Their magic stems from a deep connection with the land.
                 </p>
-                <br>
+                <img src="../images/jobs/whm.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    White Mages specialize in powerful single-target and area heals. They have regenerative spells and
+                    can also deal significant damage with their Holy magic when needed.
                 </p>
-            </h3>
-            <h3>Scholar<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/e3eba90aefc/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Scholar <img src="../images/icons/Scholar.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Scholars are strategists and tacticians, using ancient knowledge and their fairy companions to aid
+                    allies. Their wisdom comes from extensive studies of ancient tomes and Nymian magic.
                 </p>
-                <br>
+                <img src="../images/jobs/sch.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Scholars focus on damage prevention through shields and have a versatile toolkit for healing and
+                    damage mitigation. They rely on their fairy for additional healing support.
                 </p>
-            </h3>
-            <h3>Astrologian<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/2f077612950/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Astrologian <img src="../images/icons/Astrologian.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Astrologians harness the power of the stars to divine the future and support their allies. They are
+                    scholars of celestial movements and use their cards to bestow powerful buffs.
                 </p>
-                <br>
+                <img src="../images/jobs/ast.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Astrologians can switch between healing stances and are known for their unique card system, which
+                    provides various buffs to party members. They balance between healing and granting critical support
+                    through buffs.
                 </p>
-            </h3>
-            <h3>Sage<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/6b00e8264b7/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Sage <img src="../images/icons/Sage.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Sages are scholars who use nouliths, floating magical weapons, to protect and heal. Their knowledge
+                    comes from a blend of magic and science, offering a new approach to healing and barrier magic.
                 </p>
-                <br>
+                <img src="../images/jobs/sge.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Sages offer a dynamic playstyle focused on proactive barrier application and healing. They utilize
+                    their nouliths to deal damage, heal, and shield allies, making them versatile in combat situations.
                 </p>
-            </h3>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/a8635882d27/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
         </div>
-        <div id="melee">
-            <h3>Dragoon<br>
+        <h3>Melee DPS <i class="fa-solid fa-user-ninja"></i></h3>
+        <div id="melee" class="dps">
+            <h4>Dragoon <img src="../images/icons/Dragoon.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Dragoons are elite dragon hunters, wielding long spears to combat their ancient foes. They are known
+                    for their aerial assaults and their ability to leap high into the air.
                 </p>
-                <br>
+                <img src="../images/jobs/drg.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Dragoons specialize in high burst damage and have a variety of jump attacks that make them highly
+                    mobile. They also provide valuable party-wide buffs through their Dragon Sight ability.
                 </p>
-            </h3>
-            <h3>Monk<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/0533230f632/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Monk <img src="../images/icons/Monk.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Monks are martial artists who channel their inner energy, or chakra, to deliver devastating blows.
+                    They follow a disciplined path, seeking physical and spiritual perfection.
                 </p>
-                <br>
+                <img src="../images/jobs/mnk.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Monks have a fast-paced playstyle, focusing on building and maintaining their Greased Lightning
+                    stacks for increased speed and power. They excel in single-target damage and have complex positional
+                    requirements.
                 </p>
-            </h3>
-            <h3>Ninja<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/4480af45c8c/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Ninja <img src="../images/icons/Ninja.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Ninjas are stealthy assassins, utilizing speed and cunning to defeat their enemies. They employ
+                    ninjutsu, a form of magical martial arts, to enhance their abilities and summon elemental powers.
                 </p>
-                <br>
+                <img src="../images/jobs/nin.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Ninjas focus on fast-paced attacks and the strategic use of ninjutsu to deal damage and support
+                    their party. They have a unique mudra system that allows them to cast different spells based on
+                    combinations.
                 </p>
-            </h3>
-            <h3>Samurai<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/fb587e6e821/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Samurai <img src="../images/icons/Samurai.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Samurai are masters of the katana, living by the code of bushido. They seek perfection in their art,
+                    delivering precise and deadly strikes to their foes.
                 </p>
-                <br>
+                <img src="../images/jobs/sam.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Samurai have a straightforward playstyle focused on building up their Sen and spending it on
+                    powerful Iaijutsu attacks. They excel in single-target damage and have high personal DPS.
                 </p>
-            </h3>
-            <h3>Reaper<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/6b274c524ae/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Reaper <img src="../images/icons/Reaper.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Reapers are warriors who strike pacts with otherworldly beings, wielding scythes to reap souls. They
+                    harness the power of the void to unleash devastating attacks.
                 </p>
-                <br>
+                <img src="../images/jobs/rpr.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Reapers have a fluid combat style, building up their Soul Gauge to summon their avatar for joint
+                    attacks. They blend swift scythe strikes with void-based magic for high damage output.
                 </p>
-            </h3>
-            <h3>Viper<br>
-                <p class="lore">
-                    lore
-                </p>
-                <br>
-                <p class="gameplay">
-                    filler
-                </p>
-            </h3>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/866e56b6974/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
         </div>
-        <div id="physicalrange">
-            <h3>Bard<br>
+        <h3>Physical Range DPS <i class="fa-solid fa-bullseye"></i></h3>
+        <div id="range" class="dps">
+            <h4>Bard <img src="../images/icons/Bard.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Bards are wanderers and storytellers, using their music to inspire allies and defeat enemies. Their
+                    songs carry the power of magic, weaving tales of heroism into reality.
                 </p>
-                <br>
+                <img src="../images/jobs/brd.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Bards provide critical support to their party through songs that offer various buffs. They have a
+                    mobile playstyle, allowing them to deal consistent damage while moving.
                 </p>
-            </h3>
-            <h3>Machinist<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/e8c7133b92a/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Machinist <img src="../images/icons/Machinist.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Machinists are engineers and inventors, using their technological prowess to wield firearms and
+                    mechanical devices in battle. They are innovators, constantly refining their creations for maximum
+                    efficiency.
                 </p>
-                <br>
+                <img src="../images/jobs/mch.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Machinists focus on high burst damage with their firearms and deployable turrets. Their gameplay
+                    involves managing cooldowns and resources to maximize their output.
                 </p>
-            </h3>
-            <h3>Dancer<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/e67ae514847/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Dancer <img src="../images/icons/Dancer.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Dancers are both artists and fighters, using graceful movements to weave powerful attacks and buffs.
+                    They captivate friend and foe alike, turning the battlefield into their stage.
                 </p>
-                <br>
+                <img src="../images/jobs/dnc.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Dancers have a unique playstyle that focuses on dancing steps to trigger buffs for themselves and a
+                    chosen dance partner. They excel in area damage and party support.
                 </p>
-            </h3>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/1b1d77bef99/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
         </div>
-        <div id="magical-range">
-            <h3>Black Mage<br>
+        <h3>Magical Range DPS <i class="fa-solid fa-wand-magic-sparkles"></i></h3>
+        <div id="casters" class="dps">
+            <h4>Black Mage <img src="../images/icons/BlackMage.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Black Mages wield destructive magic, channeling the raw forces of fire, ice, and lightning. They
+                    seek to harness this power, often walking a fine line between control and chaos.
                 </p>
-                <br>
+                <img src="../images/jobs/blm.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Black Mages focus on a rotation of high-powered spells, balancing between Fire and Ice spells to
+                    manage their MP while maximizing damage. They require careful positioning due to their long cast
+                    times.
                 </p>
-            </h3>
-            <h3>Summoner<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/eec832efc26/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Summoner <img src="../images/icons/Summoner.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Summoners call forth entities from other realms to aid them in battle. They are scholars of ancient
+                    magic, using their knowledge to bind and command powerful creatures.
                 </p>
-                <br>
+                <img src="../images/jobs/smn.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Summoners have a versatile toolkit, capable of dealing damage over time, area attacks, and summoning
+                    avatars for powerful assaults. Their gameplay revolves around managing these summons and their
+                    abilities.
                 </p>
-            </h3>
-            <h3>Red Mage<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/4bb5af1e8a9/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Red Mage <img src="../images/icons/RedMage.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Red Mages balance the opposing forces of black and white magic, wielding both to achieve
+                    equilibrium. They are duelists, elegant and skilled in both swordplay and sorcery.
                 </p>
-                <br>
+                <img src="../images/jobs/rdm.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Red Mages have a dynamic playstyle, building up Black and White Mana to unleash powerful spells.
+                    They can quickly switch to melee attacks, making them highly versatile in combat.
                 </p>
-            </h3>
-            <h3>Pictomancer<br>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/3870f2d3cf2/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
+            <h4>Blue Mage <img src="../images/icons/BlueMage.png" height="20px" width="auto"><br>
                 <p class="lore">
-                    lore
+                    Blue Mages learn from their enemies, absorbing their powers and turning them against them. They are
+                    seekers of knowledge, always on the hunt for new and exotic abilities.
                 </p>
-                <br>
+                <img src="../images/jobs/blu.png" width="auto">
                 <p class="gameplay">
-                    filler
+                    Blue Mages have a unique system where they learn abilities from monsters. Their toolkit is highly
+                    varied, offering a wide range of spells for different situations. However, as a limited job, their
+                    endgame content is restricted.
                 </p>
-            </h3>
-            <h3>Blue Mage<br>
-                <p class="lore">
-                    lore
-                </p>
-                <br>
-                <p class="gameplay">
-                    filler
-                </p>
-            </h3>
+                <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/quest/667c7f49a11/"
+                    class="eorzeadb_link">Unlock Quest</a>
+            </h4>
         </div>
     </main>
 

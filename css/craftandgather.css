@@ -13,31 +13,13 @@
     text-align: left;
 }
 
-#tanks{
+#crafters{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
 }
 
-#healers{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-}
-
-#melee{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-}
-
-#range{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-}
-
-#casters{
+#gatherers{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
@@ -53,29 +35,20 @@ h4 img{
     max-width: fit-content;
 }
 
-#tanks h4{
+#crafters h4{
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
     border-style: solid;
     border-radius: 1em;
     margin: .5em;
-    background-color: darkblue;
+    background-color: gray;
 }
 
-#healers h4{
+#gatherers h4{
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
     border-style: solid;
     border-radius: 1em;
     margin: .5em;
-    background-color: darkgreen;
-}
-
-.dps h4{
-    font-family: "Josefin Sans", sans-serif;
-    text-align: center;
-    border-style: solid;
-    border-radius: 1em;
-    margin: .5em;
-    background-color: darkred;
+    background-color: gray;
 }
