@@ -1,3 +1,10 @@
+h2{
+    background-color: rgba(0, 0, 0, 0.974);
+    border-style: solid;
+    border-radius: 1em;
+    border-color: transparent;
+}
+
 h3 {
     color: lightgray;
     text-decoration: underline;
@@ -10,16 +17,58 @@ p {
 p#about {
     font-style: italic;
     margin: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.974);
+    border-style: solid;
+    border-radius: 1em;
+    border-color: transparent;
 }
 
 div#sections {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.topic {
+    background-color: rgba(0, 0, 0, 0.974);
+    border-style: solid;
+    border-radius: 1em;
+    border-color: transparent;
+    margin: 1em;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling caused by video exceeding viewport */
+    position: relative; /* Container positioning context */
+}
+
+#opening {
+    position: absolute; /* Absolute positioning to place it over the content */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the video */
+    min-width: 100vw; 
+    min-height: 100vh;
+    width: auto; 
+    height: auto;
+    z-index: -1; /* Ensures the video stays behind other content */
+    object-fit: cover; /* Cover the container without losing aspect ratio */
+}
+
+.content {
+    position: relative;
+    /* Ensure your content is positioned relatively within the document flow */
+    z-index: 1;
+    /* Higher z-index than the video */
+    /* Additional styling for visibility, such as text color, padding, etc., based on your design */
 }
 
 @media (max-width: 720px) {
     div#sections {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr;
     }
 }
