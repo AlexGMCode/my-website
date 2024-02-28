@@ -1,6 +1,5 @@
 .lore {
     font-style: italic;
-    font-size: .8em;
     padding: .2em;
     font-weight: lighter;
     text-align: left;
@@ -8,7 +7,6 @@
 
 .gameplay {
     font-weight: lighter;
-    font-size: .8em;
     padding: .2em;
     text-align: left;
 }
