@@ -5,35 +5,65 @@
     text-align: left;
 }
 
-.gameplay{
+.gameplay {
     font-weight: lighter;
     padding: .2em;
     text-align: left;
 }
 
-#scions{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-}
-
-#leaders{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-}
-
-
-h3{
+h2 {
     text-align: center;
 }
 
-h4 img{
+.quick-nav {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.quick-nav li {
+    flex-basis: 50%;
+    margin: .1em;
+}
+
+#quick {
+    border-style: dashed;
+    border-color: gray;
+    border-radius: 1em;
+    width: 50%;
+    display: block;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 1em;
+}
+
+#scions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+#leaders {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+h4 img {
     max-height: 20em;
     max-width: fit-content;
 }
 
-#scions h4{
+#scions h4 {
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
     border-style: solid;
@@ -42,7 +72,7 @@ h4 img{
     background-color: darkcyan;
 }
 
-#leaders h4{
+#leaders h4 {
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
     border-style: solid;
@@ -50,29 +80,58 @@ h4 img{
     margin: .5em;
 }
 
-#gridania{
+#gridania {
     background-color: #D3A60D;
 }
 
-#uldah{
+#uldah {
     background-color: #1F3645;
 }
 
-#limsa{
+#limsa {
     background-color: #C01B22;
+}
+
+@media (max-width: 1000px) {
+
+    #scions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    #leaders {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
 }
 
 @media (max-width: 720px) {
 
-    #scions{
+    #scions {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
     }
-    
-    #leaders{
+
+    #leaders {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
+    }
+
+    .quick-nav {
+        list-style-type: none;
+        text-align: center;
+        font-size: .9em;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quick-nav li {
+        margin: .1em;
     }
 }

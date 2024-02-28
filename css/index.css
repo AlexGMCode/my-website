@@ -65,6 +65,10 @@ html {
     /* Additional styling for visibility, such as text color, padding, etc., based on your design */
 }
 
+#playpause{
+    background-color: transparent;
+}
+
 @media (max-width: 720px) {
     div#sections {
         display: grid;

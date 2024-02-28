@@ -50,6 +50,20 @@ h4 img {
     background-color: gray;
 }
 
+@media (max-width: 1000px) {
+    #crafters {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    #gatherers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+}
+
 @media (max-width: 720px) {
     #crafters {
         display: grid;

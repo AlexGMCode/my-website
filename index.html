@@ -7,13 +7,15 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/5c7085b3b5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <video autoplay muted loop id="opening">
         <source src="images/opening.mp4" type="video/mp4">
     </video>
-    <div>
+
+    <div class="content">
         <header>
             <img id="banner" src="images/xivlogo.png" alt="a picture of final fantasy xiv characters" height="75%"
                 width="75%">
@@ -25,6 +27,23 @@
             </ul>
         </header>
 
+        <!-- toggle button -->
+        <button id="pauseBtn" onclick="pauseFunction()">Pause</button>
+        <script>
+            var video = document.getElementById("opening");
+
+            var btn = document.getElementById("pauseBtn");
+
+            function pauseFunction() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                }
+            }
+        </script>
         <main>
             <p id="about">
                 Final Fantasy XIV is a captivating MMORPG that offers an immersive story, diverse job classes, engaging

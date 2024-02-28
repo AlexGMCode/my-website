@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: row;
     font-size: 1.2em;
+    margin-bottom: 2em;
 }
 
 .navigation li {
