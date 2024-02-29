@@ -16,11 +16,20 @@ p {
 
 p#about {
     font-style: italic;
-    margin: 50px 20px;
+    margin: 50px auto;
     background-color: rgba(0, 0, 0, 0.55);
     border-style: solid;
     border-radius: 1em;
     border-color: transparent;
+    width: 50%;
+}
+
+div#eorzea img{
+    display: block;
+    opacity: .5;
+    width: 50%;
+    margin: auto;
+    border-radius: 1em;
 }
 
 div#sections {
@@ -45,7 +54,7 @@ html {
 }
 
 #opening {
-    position: absolute; /* Absolute positioning to place it over the content */
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Centers the video */
@@ -73,5 +82,21 @@ html {
     div#sections {
         display: grid;
         grid-template-columns: 1fr;
+    }
+    p#about {
+        font-style: italic;
+        margin: 50px auto;
+        background-color: rgba(0, 0, 0, 0.55);
+        border-style: solid;
+        border-radius: 1em;
+        border-color: transparent;
+        width: 100%;
+    }
+    
+    div#eorzea img{
+        display: block;
+        opacity: .75;
+        width: 100%;
+        margin: auto;
     }
 }
