@@ -33,17 +33,17 @@ h4 {
 
 .image-overlay-container {
     position: relative;
-    text-align: center; /* Center the text */
+    text-align: center;
     margin: 1em;
 }
 
 .background-image {
-    width: 100%; /* Make the image fill the container */
-    height: auto; /* Keep the aspect ratio */
-    aspect-ratio: 16 / 9; /* Force the image to maintain a 16:9 aspect ratio */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
 }
 
-.image-overlay-container > h4 {
+.image-overlay-container>h4 {
     position: absolute;
     top: 0;
     left: 0;
@@ -52,13 +52,18 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* This helps in aligning the text nicely */
-    background-color: rgba(128, 128, 128, 0.216); /* Optional: Adds a semi-transparent overlay to improve readability */
-    color: white; /* Change text color for better visibility */
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.216);
+    color: white;
     font-family: "Josefin Sans", sans-serif;
     font-size: 1em;
-    margin: 0; /* Remove margin to fit the container */
-    border-radius: 1em; /* Optional, depending on your design */
+    text-shadow: -1px 1px 2px #192B5B,
+        1px 1px 2px #192B5B,
+        1px -1px 0 #192B5B,
+        -1px -1px 0 #192B5B;
+    margin: 0;
+    border-radius: 1em;
+    aspect-ratio: 16 / 9;
 }
 
 @media (max-width: 1000px) {
@@ -76,23 +81,30 @@ h4 {
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
 
     #battle {
         font-size: .9em;
     }
 }
 
-@media (max-width: 395px) {
+@media (max-width: 425px) {
 
     #battle {
         font-size: .8em;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 370px) {
 
     #battle {
         font-size: .7em;
+    }
+}
+
+@media (max-width: 320px) {
+
+    #battle {
+        font-size: .5em;
     }
 }

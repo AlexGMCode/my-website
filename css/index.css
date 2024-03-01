@@ -1,43 +1,54 @@
-h3 {
-    color: lightgray;
-    text-decoration: underline;
-}
-
-p {
-    margin: 10px;
-}
-
-p#about {
-    font-style: italic;
-    margin: 50px auto;
-    background-color: rgba(0, 0, 0, 0.55);
-    border-style: solid;
-    border-radius: 1em;
-    border-color: transparent;
-    width: 50%;
-}
-
-div#eorzea img {
-    display: block;
-    opacity: .5;
-    width: 50%;
-    margin: auto;
-    border-radius: 1em;
-}
-
-div#sections {
+#intro {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
 }
 
-.topic {
-    background-color: rgba(0, 0, 0, 0.55);
-    border-style: solid;
+#intro > * {
+    max-width: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+    text-shadow: -1px 1px 2px #192B5B,
+    1px 1px 2px #192B5B,
+    1px -1px 0 #192B5B,
+    -1px -1px 0 #192B5B;
+    text-align: center;
     border-radius: 1em;
-    border-color: transparent;
-    margin: 1em;
+    margin: 1em 0em;
+    background-color: #192B5BBF;
 }
+
+#intro > img{
+    opacity: 95%;
+}
+
+#welcome{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#welcome > * {
+    max-width: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+    border-radius: 1em;
+    margin: 1em 0em;
+    background-color: #192B5BBF;
+}
+
+#welcome > img{
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 50%;
+    opacity: 95%;
+    margin-bottom: 0;
+}
+
+#start {margin-top: 0;}
 
 body,
 html {
@@ -80,6 +91,43 @@ td {
     background-color: rgba(0, 0, 0, 0.55);
 }
 
+.odd {
+    background-color: rgba(255, 0, 0, 0.55);
+}
+
+@media (max-width: 1470px) {
+    #map {
+        grid-area: map;
+        margin-bottom: 0;
+    }
+
+    #eorzea {
+        grid-area: eorzea;
+        margin-top: -.2em;
+        margin-bottom: 1em;
+    }
+
+    #msq {
+        grid-area: msq;
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+
+    #story {
+        grid-area: story;
+        margin-top: -.2em;
+        margin-bottom: 1em;
+    }
+
+    #intro {
+        grid-template-areas:
+            'map'
+            'eorzea'
+            'msq'
+            'story';
+grid-template-columns: 1fr;
+    }
+}
 
 @media (max-width: 720px) {
     div#sections {
