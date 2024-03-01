@@ -15,23 +15,35 @@
     border-style: ridge;
     border-color: gray;
     border-radius: 1em;
-    width: 50%;
+    width: 70%;
     display: block;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 15%;
+    margin-left: 15%;
     margin-top: 1em;
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
 }
 
 .quick-nav {
     list-style-type: none;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
+}
+
+.quick-nav a{
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border-style: ridge;
+    border-radius: .5em;
+    border-color: darkgray;
+    height: 4.5em;
+    padding: auto;
 }
 
 .quick-nav li {
@@ -43,7 +55,9 @@
 #healers,
 #melee,
 #range,
-#casters {
+#casters,
+#crafters,
+#gatherers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
@@ -86,6 +100,16 @@ h4 img {
     background-color: rgba(139, 0, 0, 0.75);
 }
 
+#crafters h4,
+#gatherers h4 {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    border-style: solid;
+    border-radius: 1em;
+    margin: .5em;
+    background-color: rgba(128, 128, 128, 0.75);
+}
+
 @media (max-width: 1000px) {
     #tanks,
     #healers,
@@ -95,6 +119,19 @@ h4 img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
+    }
+    .quick-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: .9em;
+    }
+
+    .quick-nav a{
+        height: 2em;
+    }
+    
+    .quick-nav li {
+        margin: .1em;
     }
 }
 
@@ -110,8 +147,11 @@ h4 img {
     }
 
     .quick-nav {
-        font-size: .9em;
-        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .quick-nav a{
+        height: 2em;
     }
     
     .quick-nav li {

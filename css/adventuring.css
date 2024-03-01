@@ -1,0 +1,137 @@
+.lore {
+    font-style: italic;
+    padding: .2em;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.gameplay {
+    font-weight: lighter;
+    padding: .2em;
+    text-align: left;
+}
+
+#quick {
+    border-style: ridge;
+    border-color: gray;
+    border-radius: 1em;
+    width: 50%;
+    display: block;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 1em;
+    background-color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+}
+
+.quick-nav {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.quick-nav li {
+    flex-basis: 50%;
+    margin: .1em;
+}
+
+
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1em;
+    text-align: center;
+    border-style: solid;
+    border-radius: 1em;
+    margin: .5em;
+    background-color: rgba(128, 128, 128, 0.75);
+}
+
+#battle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.image-overlay-container {
+    position: relative;
+    text-align: center; /* Center the text */
+    margin: 1em;
+}
+
+.background-image {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Keep the aspect ratio */
+    aspect-ratio: 16 / 9; /* Force the image to maintain a 16:9 aspect ratio */
+}
+
+#raidtext, #dungeontext, #trialtext, #fatetext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* This helps in aligning the text nicely */
+    background-color: rgba(128, 128, 128, 0.216); /* Optional: Adds a semi-transparent overlay to improve readability */
+    color: white; /* Change text color for better visibility */
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1em;
+    margin: 0; /* Remove margin to fit the container */
+    border-radius: 1em; /* Optional, depending on your design */
+}
+
+@media (max-width: 1000px) {
+
+    #battle {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media (max-width: 720px) {
+
+    #battle {
+        font-size: 1em;
+    }
+
+    .quick-nav {
+        font-size: .9em;
+        flex-direction: column;
+    }
+
+    .quick-nav li {
+        margin: .1em;
+    }
+}
+
+@media (max-width: 440px) {
+
+    #battle {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 395px) {
+
+    #battle {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 350px) {
+
+    #battle {
+        font-size: .7em;
+    }
+}
