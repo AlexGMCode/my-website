@@ -22,6 +22,7 @@
     margin-top: 1em;
     background-color: rgba(0, 0, 0, 0.75);
     text-align: center;
+
 }
 
 .quick-nav {
@@ -34,7 +35,7 @@
     flex-direction: row;
 }
 
-.quick-nav a{
+.quick-nav a {
     display: block;
     color: #007bff;
     text-decoration: none;
@@ -111,36 +112,47 @@ h4 img {
 }
 
 @media (max-width: 1000px) {
+
     #tanks,
     #healers,
     #melee,
     #range,
-    #casters {
+    #casters,
+    #crafters,
+    #gatherers {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
     }
+
     .quick-nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         font-size: .9em;
     }
 
-    .quick-nav a{
+    .quick-nav a {
         height: 2em;
     }
-    
+
     .quick-nav li {
         margin: .1em;
     }
 }
 
+h3 > a{
+    font-size: .8em
+}
+
 @media (max-width: 720px) {
+
     #tanks,
     #healers,
     #melee,
     #range,
-    #casters {
+    #casters,
+    #crafters,
+    #gatherers {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
@@ -150,10 +162,10 @@ h4 img {
         grid-template-columns: 1fr;
     }
 
-    .quick-nav a{
+    .quick-nav a {
         height: 2em;
     }
-    
+
     .quick-nav li {
         margin: .1em;
     }
