@@ -4,31 +4,31 @@
     grid-template-rows: auto auto;
 }
 
-#intro > * {
+#intro>* {
     max-width: 100%;
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.2em;
     font-style: italic;
     text-shadow: -1px 1px 2px #192B5B,
-    1px 1px 2px #192B5B,
-    1px -1px 0 #192B5B,
-    -1px -1px 0 #192B5B;
+        1px 1px 2px #192B5B,
+        1px -1px 0 #192B5B,
+        -1px -1px 0 #192B5B;
     text-align: center;
     border-radius: 1em;
     margin: 1em 0em;
     background-color: #192B5BBF;
 }
 
-#intro > img{
+#intro>img {
     opacity: 95%;
 }
 
-#welcome{
+#welcome {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-#welcome > * {
+#welcome>* {
     max-width: 100%;
     font-family: "Josefin Sans", sans-serif;
     font-size: 1.2em;
@@ -39,7 +39,7 @@
     background-color: #192B5BBF;
 }
 
-#welcome > img{
+#welcome>img {
     display: block;
     margin-left: 25%;
     margin-right: 25%;
@@ -48,7 +48,9 @@
     margin-bottom: 0;
 }
 
-#start {margin-top: 0;}
+#start {
+    margin-top: 0;
+}
 
 body,
 html {
@@ -125,30 +127,15 @@ td {
             'eorzea'
             'msq'
             'story';
-grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 720px) {
-    div#sections {
-        display: grid;
         grid-template-columns: 1fr;
     }
 
-    p#about {
-        font-style: italic;
-        margin: 50px auto;
-        background-color: rgba(0, 0, 0, 0.55);
-        border-style: solid;
-        border-radius: 1em;
-        border-color: transparent;
-        width: 100%;
-    }
-
-    div#eorzea img {
+    #welcome>img {
         display: block;
-        opacity: .75;
-        width: 100%;
-        margin: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        max-width: 90%;
+        opacity: 95%;
+        margin-bottom: 0;
     }
 }
