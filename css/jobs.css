@@ -70,7 +70,7 @@ h3 {
 }
 
 h4 img {
-    max-height: 20em;
+    max-height: 12em;
     max-width: fit-content;
 }
 
@@ -111,7 +111,7 @@ font-size: 1.5em;
     background-color: rgba(128, 128, 128, 0.75);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1279px) {
 
     #tanks,
     #healers,
