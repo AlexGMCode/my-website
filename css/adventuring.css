@@ -16,7 +16,7 @@ h3 {
 }
 
 h4 {
-    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5em;
     font-size: 1em;
     text-align: center;
     border-style: solid;
@@ -40,6 +40,8 @@ h4 {
 .background-image {
     width: 100%;
     height: auto;
+    border-radius: 1em;
+    padding-top: 1em;
     aspect-ratio: 16 / 9;
 }
 
@@ -55,8 +57,7 @@ h4 {
     flex-direction: column;
     background-color: rgba(128, 128, 128, 0.216);
     color: white;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     text-shadow: -1px 1px 2px #192B5B,
         1px 1px 2px #192B5B,
         1px -1px 0 #192B5B,
@@ -66,7 +67,7 @@ h4 {
     aspect-ratio: 16 / 9;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1279px) {
 
     #battle {
         grid-template-columns: 1fr;

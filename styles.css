@@ -2,8 +2,14 @@
 /* specific css for each page can be found in the css folder */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
     color: rgb(110, 255, 233);
+    text-shadow: -1px 1px 2px #192B5B,
+        1px 1px 2px #192B5B,
+        1px -1px 0 #192B5B,
+        -1px -1px 0 #192B5B;
     line-height: 1.6;
 }
 
@@ -36,7 +42,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: row;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 2em;
 }
 
@@ -48,7 +54,7 @@ body {
 
 .navigation a {
     display: block;
-    color: #007bff;
+    color: #eeeffe;
     text-decoration: none;
     font-weight: bold;
     border-style: double;
@@ -57,13 +63,13 @@ body {
 }
 
 a[href] {
-    text-decoration: underline;
-    color: #4a9ef8;
+    color: #939bff;
+    text-decoration: underline;  
 }
 
 a:hover {
-    color: #0011ff;
-    background-color: white;
+    color: #eeeffe;
+    background-color: black;
 }
 
 footer {

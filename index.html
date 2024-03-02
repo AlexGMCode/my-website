@@ -7,6 +7,14 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- icons -->
     <script src="https://kit.fontawesome.com/5c7085b3b5.js" crossorigin="anonymous"></script>
 </head>
 
@@ -46,6 +54,43 @@
             }
         </script>
         <main>
+            <div id="welcome">
+                <img src="images/ffxiv_banner.jpg" alt="a picture of final fantasy xiv characters">
+                <div id="start">
+                    <h2>Let's start your new adventure!</h2>
+                    <p>Welcome, new Warrior of Light, to the world of Final Fantasy XIV, where a grand adventure beckons
+                        and the fate of Eorzea rests upon your shoulders. As you step into this vibrant realm, prepare
+                        to engage in <a href="Pages/adventuring.html">epic battle content</a>, from conquering dungeons,
+                        to facing off against primal foes, and even delving into the mysteries of the raids. But
+                        the adventure doesn't stop at combat; immerse yourself in <a
+                            href="Pages/lifestyle.html">enriching lifestyle content</a>, from
+                        crafting and gathering, player housing, and the tranquil Island Sanctuary, to expressing your
+                        style with the Glamour system and partaking in the myriad entertainments of the Gold Saucer.
+                        <br>
+                        <br>
+                        As you traverse this vast world, you'll encounter a <a href="Pages/jobs.html">variety of
+                            jobs</a> to master, from the
+                        front-line resilience of Tanks, the restorative support of Healers, to the devastating attacks
+                        of
+                        DPS roles. Each job offers a unique playstyle, allowing you to tailor your adventure to your
+                        preferences. Along your journey, you'll join forces with <a href="Pages/allies.html">various
+                            allies</a> dedicated to protecting Eorzea from threats both terrestrial and celestial.
+                        Together,
+                        you will uncover mysteries, challenge titans, and write your own legend.
+                        <br>
+                        <br>
+                        Embrace your destiny as the Warrior of Light, a champion of hope in a realm filled with
+                        adventure, danger, and the bonds of camaraderie. Eorzea is a land of endless stories waiting to
+                        be told, and your epic is just beginning. Welcome to Final Fantasy XIV, where every quest is a
+                        step toward your destiny, and the world is yours to explore. The adventure of a lifetime awaits!
+                        <br>
+                        <br>
+                        <a href="https://freetrial.finalfantasyxiv.com/na/" target="_blank" id="ffxiv">Start the free
+                            trial today
+                            with no limits on playtime</a>
+                    </p>
+                </div>
+            </div>
             <div id="intro">
                 <img src="images/eorzea.png" alt="a map of eorzea" id="map">
                 <div id="eorzea">
@@ -85,44 +130,8 @@
                 <img src="images/content/msq.jpg" alt="a cutscene in msq" id="msq">
 
             </div>
-            <div id="welcome">
-                <img src="images/ffxiv_banner.jpg" alt="a picture of final fantasy xiv characters">
-                <div id="start">
-                    <h2>Let's start your new adventure!</h2>
-                    <p>Welcome, new Warrior of Light, to the world of Final Fantasy XIV, where a grand adventure beckons
-                        and the fate of Eorzea rests upon your shoulders. As you step into this vibrant realm, prepare
-                        to engage in <a href="Pages/adventuring.html">epic battle content</a>, from conquering dungeons,
-                        to facing off against primal foes, and even delving into the mysteries of the raids. But
-                        the adventure doesn't stop at combat; immerse yourself in enriching <a
-                            href="Pages/lifestyle.html">lifestyle content</a>, from
-                        crafting and gathering, player housing, and the tranquil Island Sanctuary, to expressing your
-                        style with the Glamour system and partaking in the myriad entertainments of the Gold Saucer.
-                        <br>
-                        <br>
-                        As you traverse this vast world, you'll encounter a <a href="Pages/jobs.html">variety of
-                            jobs</a> to master, from the
-                        front-line resilience of Tanks, the restorative support of Healers, to the devastating attacks
-                        of
-                        DPS roles. Each job offers a unique playstyle, allowing you to tailor your adventure to your
-                        preferences. Along your journey, you'll join forces with <a href="Pages/allies.html">various
-                            allies</a> dedicated to protecting Eorzea from threats both terrestrial and celestial.
-                        Together,
-                        you will uncover mysteries, challenge titans, and write your own legend.
-                        <br>
-                        <br>
-                        Embrace your destiny as the Warrior of Light, a champion of hope in a realm filled with
-                        adventure, danger, and the bonds of camaraderie. Eorzea is a land of endless stories waiting to
-                        be told, and your epic is just beginning. Welcome to Final Fantasy XIV, where every quest is a
-                        step toward your destiny, and the world is yours to explore. The adventure of a lifetime awaits!
-                        <br>
-                        <br>
-                        <a href="https://freetrial.finalfantasyxiv.com/na/" target="_blank">Start the free trial today
-                            with no limits on playtime!</a>
-                    </p>
 
-                </div>
-            </div>
-            <h2>System Requirements</h2>
+            <h2 id="syshead">System Requirements</h2>
             <table id="sys">
                 <thead>
                     <tr class="odd">
@@ -140,8 +149,8 @@
                     </tr>
                     <tr class="odd">
                         <td class="category">Processor</td>
-                        <td>Intel® Core™i5 2.4GHz or higher, AMD Ryzen™ 1600 or higher</td>
-                        <td>Intel® Core™i7 3GHz or higher, AMD Ryzen™ 2700x or higher</td>
+                        <td>Intel® Core i5 2.4GHz or higher, AMD Ryzen 1600 or higher</td>
+                        <td>Intel® Core i7 3GHz or higher, AMD Ryzen 2700x or higher</td>
                     </tr>
                     <tr>
                         <td class="category">Memory</td>
@@ -150,8 +159,8 @@
                     </tr>
                     <tr class="odd">
                         <td class="category">Graphics</td>
-                        <td>1280 x 720: NVIDIA® Geforce® GTX750 or higher, AMD Radeon™ R7 260X or higher</td>
-                        <td>1920 x 1080: NVIDIA® Geforce® GTX970 or higher AMD Radeon™ RX 480 or higher</td>
+                        <td>1280 x 720: NVIDIA® Geforce® GTX750 or higher, AMD Radeon R7 260X or higher</td>
+                        <td>1920 x 1080: NVIDIA® Geforce® GTX970 or higher AMD Radeon RX 480 or higher</td>
                     </tr>
                     <tr>
                         <td class="category">DirectX</td>
