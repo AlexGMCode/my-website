@@ -84,27 +84,27 @@ h4 {
 @media (max-width: 520px) {
 
     #lifestyle {
-        font-size: .9em;
+        font-size: .7em;
     }
 }
 
 @media (max-width: 445px) {
 
     #lifestyle {
-        font-size: .8em;
+        font-size: .6em;
     }
 }
 
 @media (max-width: 390px) {
 
     #lifestyle {
-        font-size: .7em;
+        font-size: .5em;
     }
 }
 
 @media (max-width: 340px) {
 
     #lifestyle {
-        font-size: .5em;
+        font-size: .4em;
     }
 }
