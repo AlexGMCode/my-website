@@ -69,12 +69,13 @@ body {
 
 a[href] {
     color: #939bff;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover {
     color: #eeeffe;
     background-color: black;
+    text-decoration: underline;
 }
 
 #jdrop, #adrop {
