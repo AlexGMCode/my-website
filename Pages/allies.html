@@ -7,6 +7,7 @@
     <title>Allies</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/allies.css">
+    <link rel="icon" type="../image/x-icon" href="/images/favicon.ico">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +22,33 @@
 <body>
     <div class="background"></div>
     <header>
-        <a href="../index.html"><img id="banner" src="../images/xivlogo.png" alt="FFXIV Logo" height="75%"
+        <a href="/index.html"><img id="banner" src="/images/xivlogo.png" alt="FFXIV Logo" height="75%"
                 width="75%"></a>
         <ul class="navigation">
-            <li class="navigation-link"><a href="../index.html">Home</a></li>
-            <li class="navigation-link"><a href="adventuring.html">Adventuring</a></li>
-            <li class="navigation-link"><a href="lifestyle.html">Lifestlye</a></li>
-            <li class="navigation-link"><a href="jobs.html">Playable Jobs</a></li>
-            <li class="navigation-link"><a href="allies.html">Allied NPCs</a></li>
+            <li class="navigation-link"><a href="/index.html">Home</a></li>
+            <li class="navigation-link"><a href="/pages/adventuring.html">Adventuring</a></li>
+            <li class="navigation-link"><a href="/pages/lifestyle.html">Lifestlye</a></li>
+            <li class="navigation-link" id="jobs"><a href="/pages/jobs.html">Playable Jobs</a>
+                <div id="jdrop">
+                    <ul class="drop-nav">
+                        <li class="drop-link"><a href="/Pages/jobs.html#htanks">Tanks</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hhealers">Healers</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hmelee">Melee</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hrange">Ranged</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hcasters">Magical</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hcrafters">Crafters</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hgatherers">Gatherers</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="navigation-link" id="allies"><a href="/pages/allies.html" id="current">Allied NPCs</a>
+                <div id="adrop">
+                    <ul class="drop-nav">
+                        <li class="drop-link"><a href="/Pages/allies.html#hscions">Scions of the Seventh Dawn</a></li>
+                        <li class="drop-link"><a href="/Pages/allies.html#hleaders">City State Leaders</a></li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </header>
 
@@ -41,7 +61,7 @@
             </ul>
         </div>
         <br>
-        <h1>Scions of the Seventh Dawn <i class="fa-solid fa-sun"></i><br><a href="#top">Return to Top</a></h1>
+        <h1 id="hscions">Scions of the Seventh Dawn <i class="fa-solid fa-sun"></i><br><a href="#top">Return to Top</a></h1>
         <div id="scions">
             <h4>Minfilia Warde<br>
                 <p class="lore">
@@ -164,7 +184,7 @@
             </h4>
         </div>
 
-        <h1>City State Leaders <i class="fa-solid fa-flag"></i><br><a href="#top">Return to Top</a></h1>
+        <h1 id="hleaders">City State Leaders <i class="fa-solid fa-flag"></i><br><a href="#top">Return to Top</a></h1>
         <div id="leaders">
             <h4 id="gridania">Kan-E-Senna <img src="../images/icons/gridania.png" height="20px" width="auto"><br>
                 <p class="lore">

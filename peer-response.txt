@@ -1,0 +1,29 @@
+From Amanda Bradburn:
+1)"When you mouse over the combat jobs and support jobs i would like to see all those sections of that page listed to be able to jump to and just remove the quick navigation."
+-added a hover menu when mousing over Playable Jobs and Allied NPCs
+-hid quick menu with an "@media (pointer: fine)" rule so that it would hide if it detected a desktop cursor, but still be there for mobile users who can have trouble hovering.
+
+2) When you are on the home page I would take out the clickable link for home so it doesnt start replaying the background.
+-most webpages have a clickable link to home, even on the home page itself, but i added a pause button near the top
+
+3)Under your nav bar I would add some margin to the pages of maybe 20px it helps pull the page to focus.
+-added margin
+
+4)The cards on the combat jobs and allied npcs I would make a little smaller like the support jobs crafters.
+-fixed size
+
+5)On combat jobs the unlock quest mouse over is cool but a little to big and on smaller screens not sure if it would work cause people dont really mouse over and it goes off the side.
+-not fixable on my end (or at least with my current knowledge), the code for this is javascript hosted on final fantasy's website
+
+6)On the home page it wont scroll past the "fold" of the page might be because of the grid layout only on the id sections and then the other cards on the page are classes, I would make all of them as a grid area.
+-fixed bug
+
+From Sara Kan:
+1)What I think would be some changes that you should consider is maybe keep the page link highlighted for the page that is being viewed so that the viewer is reminded of what page they are viewing.
+-made current page link red
+
+2)Another change that I think is maybe the "white space." It is not necessarily white since you have a picture background, but maybe add a text box or more pictures to where there is space after the final character as shown in this screenshot: (screenshot here)
+-no changes as this is a personal aesthetic choice, but i can see where the recommendation is coming from
+
+3)The third advice that I have is to have the background of the "Quick Navigation" box be solid instead of transparent so that it stands out more.
+-made opacity level less transparent, but keeping a smaller level of transparency as an aesthetic choice

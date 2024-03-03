@@ -7,6 +7,7 @@
     <title>Playable Jobs</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css/jobs.css">
+    <link rel="icon" type="../image/x-icon" href="/images/favicon.ico">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,14 +26,33 @@
     <script src="https://lds-img.finalfantasyxiv.com/pc/global/js/eorzeadb/loader.js?v3"></script>
 
     <header>
-        <a href="../index.html"><img id="banner" src="../images/xivlogo.png" alt="FFXIV Logo" height="75%"
+        <a href="/index.html"><img id="banner" src="/images/xivlogo.png" alt="FFXIV Logo" height="75%"
                 width="75%"></a>
         <ul class="navigation">
-            <li class="navigation-link"><a href="../index.html">Home</a></li>
-            <li class="navigation-link"><a href="adventuring.html">Adventuring</a></li>
-            <li class="navigation-link"><a href="lifestyle.html">Lifestlye</a></li>
-            <li class="navigation-link"><a href="jobs.html">Playable Jobs</a></li>
-            <li class="navigation-link"><a href="allies.html">Allied NPCs</a></li>
+            <li class="navigation-link"><a href="/index.html">Home</a></li>
+            <li class="navigation-link"><a href="/pages/adventuring.html">Adventuring</a></li>
+            <li class="navigation-link"><a href="/pages/lifestyle.html">Lifestlye</a></li>
+            <li class="navigation-link" id="jobs"><a href="/pages/jobs.html" id="current">Playable Jobs</a>
+                <div id="jdrop">
+                    <ul class="drop-nav">
+                        <li class="drop-link"><a href="/Pages/jobs.html#htanks">Tanks</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hhealers">Healers</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hmelee">Melee</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hrange">Ranged</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hcasters">Magical</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hcrafters">Crafters</a></li>
+                        <li class="drop-link"><a href="/Pages/jobs.html#hgatherers">Gatherers</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="navigation-link" id="allies"><a href="/pages/allies.html">Allied NPCs</a>
+                <div id="adrop">
+                    <ul class="drop-nav">
+                        <li class="drop-link"><a href="/Pages/allies.html#hscions">Scions of the Seventh Dawn</a></li>
+                        <li class="drop-link"><a href="/Pages/allies.html#hleaders">City State Leaders</a></li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </header>
 
@@ -40,17 +60,17 @@
         <div id="quick">
             <h2>Quick Navigation</h2>
             <ul class="quick-nav">
-                <li class="quick-link"><a href="#tanks">Tanks</a></li>
-                <li class="quick-link"><a href="#healers">Healers</a></li>
-                <li class="quick-link"><a href="#melee">Melee</a></li>
-                <li class="quick-link"><a href="#range">Ranged</a></li>
-                <li class="quick-link"><a href="#casters">Magical</a></li>
-                <li class="quick-link"><a href="#crafters">Crafters</a></li>
-                <li class="quick-link"><a href="#gatherers">Gatherers</a></li>
+                <li class="quick-link"><a href="/Pages/jobs.html#tanks">Tanks</a></li>
+                <li class="quick-link"><a href="/Pages/jobs.html#healers">Healers</a></li>
+                <li class="quick-link"><a href="/Pages/jobs.html#melee">Melee</a></li>
+                <li class="quick-link"><a href="/Pages/jobs.html#range">Ranged</a></li>
+                <li class="quick-link"><a href="/Pages/jobs.html#casters">Magical</a></li>
+                <li class="quick-link"><a href="/Pages/jobs.html#crafters">Crafters</a></li>
+                <li class="quick-link"><a href="/Pages/jobs.html#gatherers">Gatherers</a></li>
             </ul>
         </div>
         <div id="roles">
-            <h1>Tanks <i class="fa-solid fa-shield"></i><br><a href="#top">Return to Top</a></h1>
+            <h1 id="htanks">Tanks <i class="fa-solid fa-shield"></i><br><a href="#top">Return to Top</a></h1>
             <div id="tanks">
                 <h4>Paladin <img src="../images/icons/Paladin.png" height="20px" width="auto"><br>
                     <p class="lore">
@@ -111,7 +131,7 @@
                         class="eorzeadb_link" target="_blank">Unlock Quest</a>
                 </h4>
             </div>
-            <h1>Healers <i class="fa-solid fa-notes-medical"></i><br><a href="#top">Return to Top</a></h1>
+            <h1 id="hhealers">Healers <i class="fa-solid fa-notes-medical"></i><br><a href="#top">Return to Top</a></h1>
             <div id="healers">
                 <h4>White Mage <img src="../images/icons/WhiteMage.png" height="20px" width="auto"><br>
                     <p class="lore">
@@ -175,7 +195,7 @@
                         class="eorzeadb_link" target="_blank">Unlock Quest</a>
                 </h4>
             </div>
-            <h1>Melee DPS <i class="fa-solid fa-user-ninja"></i><br><a href="#top">Return to Top</a></h1>
+            <h1 id="hmelee">Melee DPS <i class="fa-solid fa-user-ninja"></i><br><a href="#top">Return to Top</a></h1>
             <div id="melee" class="dps">
                 <h4>Dragoon <img src="../images/icons/Dragoon.png" height="20px" width="auto"><br>
                     <p class="lore">
@@ -252,7 +272,7 @@
                         class="eorzeadb_link" target="_blank">Unlock Quest</a>
                 </h4>
             </div>
-            <h1>Physical Range DPS <i class="fa-solid fa-bullseye"></i><br><a href="#top">Return to Top</a></h1>
+            <h1 id="hrange">Physical Range DPS <i class="fa-solid fa-bullseye"></i><br><a href="#top">Return to Top</a></h1>
             <div id="range" class="dps">
                 <h4>Bard <img src="../images/icons/Bard.png" height="20px" width="auto"><br>
                     <p class="lore">
@@ -300,7 +320,7 @@
                         class="eorzeadb_link" target="_blank">Unlock Quest</a>
                 </h4>
             </div>
-            <h1>Magical Range DPS <i class="fa-solid fa-wand-magic-sparkles"></i><br><a href="#top">Return to Top</a>
+            <h1 id="hcasters">Magical Range DPS <i class="fa-solid fa-wand-magic-sparkles"></i><br><a href="#top">Return to Top</a>
             </h1>
             <div id="casters" class="dps">
                 <h4>Black Mage <img src="../images/icons/BlackMage.png" height="20px" width="auto"><br>
@@ -364,7 +384,7 @@
                         class="eorzeadb_link" target="_blank">Unlock Quest</a>
                 </h4>
             </div>
-            <h1>Crafters <i class="fa-solid fa-hammer"></i><br><a href="#top">Return to Top</a></h1>
+            <h1 id="hcrafters">Crafters <i class="fa-solid fa-hammer"></i><br><a href="#top">Return to Top</a></h1>
             <div id="crafters">
                 <h4>Carpenter <img src="../images/icons/Carpenter.png" height="20px" width="auto"><br>
                     <p class="lore">
@@ -468,7 +488,7 @@
                         class="eorzeadb_link" target="_blank">Unlock Quest</a>
                 </h4>
             </div>
-            <h1>Gatherers <i class="fa-solid fa-tree"></i><br><a href="#top">Return to Top</a></h1>
+            <h1 id="hgatherers">Gatherers <i class="fa-solid fa-tree"></i><br><a href="#top">Return to Top</a></h1>
             <div id="gatherers">
                 <h4>Miner <img src="../images/icons/Miner.png" height="20px" width="auto"><br>
                     <p class="lore">

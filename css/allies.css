@@ -135,3 +135,9 @@ h3 > a{
         margin: .1em;
     }
 }
+
+@media (pointer: fine) {
+    #quick {
+        display: none;
+    }
+}

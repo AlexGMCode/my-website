@@ -13,10 +13,10 @@ body {
     line-height: 1.6;
 }
 
-.background{
+.background {
     position: fixed;
     background-image: url(images/arr.jpg);
-    background-size:100%;
+    background-size: 100%;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,6 +50,11 @@ body {
     flex-basis: 20%;
     margin: .1em;
     background-color: rgba(0, 0, 0, 0.55);
+    border-radius: .5em;
+}
+
+.navigation-link {
+    position: relative;
 }
 
 .navigation a {
@@ -64,12 +69,37 @@ body {
 
 a[href] {
     color: #939bff;
-    text-decoration: underline;  
+    text-decoration: underline;
 }
 
 a:hover {
     color: #eeeffe;
     background-color: black;
+}
+
+#jdrop, #adrop {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: .5em;
+}
+
+#jobs:hover #jdrop, #allies:hover #adrop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.drop-nav {
+    list-style-type: none;
+}
+
+.drop-nav li {
+    width: 100%;
 }
 
 footer {
@@ -81,6 +111,10 @@ footer {
     border-radius: 1em;
     border-color: transparent;
     background-color: rgba(0, 0, 0, 0.55);
+}
+
+#current{
+    background-color: #D01031;
 }
 
 @media (max-width: 720px) {
@@ -98,6 +132,10 @@ footer {
         /*display:flex;*/
         display: block;
         width: 95%;
+    }
+
+    #jdrop, #adrop {
+        position: unset;
     }
 
     h1 {
