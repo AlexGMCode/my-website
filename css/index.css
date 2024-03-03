@@ -51,6 +51,10 @@
     padding: .5em;
 }
 
+#start a {
+    text-decoration: underline;
+}
+
 #eorzea, #story {
     padding: .5em
 }
