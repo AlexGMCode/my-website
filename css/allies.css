@@ -1,16 +1,16 @@
-.lore {
-    font-style: italic;
-    padding: .2em;
-    font-weight: lighter;
-    text-align: left;
-}
-
+/* Text Layout */
+.lore,
 .gameplay {
     font-weight: lighter;
     padding: .2em;
     text-align: left;
 }
 
+.lore {
+    font-style: italic;
+}
+
+/* Quick Nav Styles */
 #quick {
     border-style: ridge;
     border-color: gray;
@@ -43,7 +43,6 @@
     border-style: ridge;
     border-radius: .5em;
     border-color: darkgray;
-    height: 4.5em;
     padding: auto;
     max-height: 1.5em;
 }
@@ -53,6 +52,7 @@
     margin: .1em;
 }
 
+/* Allies Layout */
 #scions {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -69,7 +69,7 @@ h1 {
     text-align: center;
 }
 
-h4{
+h4 {
     font-size: 1.5em;
 }
 
@@ -105,11 +105,13 @@ h4 img {
     background-color: #C01B22bf;
 }
 
-h3 > a{
+h3>a {
     font-size: .8em
 }
 
+/* Media Breakpoints */
 @media (max-width: 1560px) {
+
     #scions,
     #leaders {
         display: grid;
@@ -119,6 +121,7 @@ h3 > a{
 }
 
 @media (max-width: 720px) {
+
     #scions,
     #leaders {
         display: grid;

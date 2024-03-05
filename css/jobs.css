@@ -1,16 +1,16 @@
-.lore {
-    font-style: italic;
-    padding: .2em;
-    font-weight: lighter;
-    text-align: left;
-}
-
+/* Text Layout */
+.lore,
 .gameplay {
     font-weight: lighter;
     padding: .2em;
     text-align: left;
 }
 
+.lore {
+    font-style: italic;
+}
+
+/* Quick Nav Styles */
 #quick {
     border-style: ridge;
     border-color: gray;
@@ -52,6 +52,7 @@
     margin: .1em;
 }
 
+/* Jobs Layout */
 #tanks,
 #healers,
 #melee,
@@ -75,7 +76,7 @@ h4 img {
 }
 
 #tanks h4 {
-font-size: 1.5em;
+    font-size: 1.5em;
     text-align: center;
     border-style: solid;
     border-radius: 1em;
@@ -84,7 +85,7 @@ font-size: 1.5em;
 }
 
 #healers h4 {
-font-size: 1.5em;
+    font-size: 1.5em;
     text-align: center;
     border-style: solid;
     border-radius: 1em;
@@ -93,7 +94,7 @@ font-size: 1.5em;
 }
 
 .dps h4 {
-font-size: 1.5em;
+    font-size: 1.5em;
     text-align: center;
     border-style: solid;
     border-radius: 1em;
@@ -103,7 +104,7 @@ font-size: 1.5em;
 
 #crafters h4,
 #gatherers h4 {
-font-size: 1.5em;
+    font-size: 1.5em;
     text-align: center;
     border-style: solid;
     border-radius: 1em;
@@ -111,6 +112,7 @@ font-size: 1.5em;
     background-color: rgba(128, 128, 128, 0.75);
 }
 
+/* Media Breakpoints */
 @media (max-width: 1279px) {
 
     #tanks,
@@ -140,7 +142,7 @@ font-size: 1.5em;
     }
 }
 
-h1 > a{
+h1>a {
     font-size: .8em
 }
 
