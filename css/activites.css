@@ -17,7 +17,6 @@ h4 {
 }
 
 h4 {
-    font-size: 1em;
     border-style: solid;
     border-radius: 1em;
     margin: .5em;
@@ -59,7 +58,7 @@ h4 {
     flex-direction: column;
     background-color: rgba(69, 69, 69, 0.2);
     color: white;
-    font-size: 1.5em;
+    font-size: 1.9vw;
     text-shadow: -1px 1px 2px #192B5B,
         1px 1px 2px #192B5B,
         1px -1px 0 #192B5B,
@@ -74,12 +73,8 @@ h4 {
     }
 }
 
-@media (max-width: 720px),
-(max-width: 520px),
-(max-width: 445px),
-(max-width: 390px),
-(max-width: 340px) {
-    #activities {
-        font-size: calc(.4em + 1vw);
+@media (max-width: 720px) {
+    .image-overlay-container>h4 {
+        font-size: 2.6vw;
     }
 }
