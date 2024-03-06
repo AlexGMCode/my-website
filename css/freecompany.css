@@ -98,6 +98,7 @@ fieldset,
 
 #joinus{
     background-color: transparent;
+    font-size: 1.7vw;
 }
 
 fieldset fieldset {
@@ -166,6 +167,10 @@ fieldset fieldset * {
     #joinus {
         border-radius: 1em;
         width: 84vw;
+    }
+
+    #joinus {
+        font-size: 4vw;
     }
     
     fieldset fieldset {
