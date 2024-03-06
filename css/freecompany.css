@@ -7,6 +7,26 @@
         'event eventImg';
 }
 
+h1, h2, h3, h4, p, ul{
+    text-align: center;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.768);
+    font-size: 1.5em;
+    padding: 2vw;
+}
+
+h2, h3 {
+    background-color: #5b1919bf;
+}
+
+#fclore{
+    font-style: italic;
+}
+
+#fclist{
+    list-style: inside circle;
+}
+
 #zero {
     grid-area: history;
 }
@@ -40,9 +60,80 @@
 }
 
 .fcgrid {
-    width: 48vw;
+    width: 46vw;
     justify-content: center;
-    margin: 4em 1vw;
+    margin: 4em 0vw;
+    border-radius: 1em;
+    background-color: #5b1919bf;
+    font-size: 1.9vw;
+    margin: 1em 0;
+    padding: 1vw;
+}
+
+.fcgrid img{
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Formatting */
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8vw;
+}
+
+form {
+    justify-content: center;
+    background-color: #192B5BBF;
+    border-radius: 1em;
+}
+
+fieldset,
+#joinus {
+    border-radius: 1em;
+    width: 42vw;
+}
+
+#joinus{
+    background-color: transparent;
+}
+
+fieldset fieldset {
+    display: grid;
+    width: 40vw;
+    grid-template-columns: 15vw 25vw;
+    background-color: rgba(0, 0, 0, 0.768);
+}
+
+fieldset fieldset * {
+    height: 2.5vw;
+    margin: 1vw 0vw;
+}
+
+.checkboxes {
+    grid-template-columns: 10vw 30vw;
+}
+
+.checkboxes label {
+    margin-left: -2vw;
+}
+
+.checkboxes input {
+    margin-top: .8vw;
+    margin-right: 0;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#buttons input {
+    margin: .5em;
+    font-size: 1.5em;
+    height: 2em;
 }
 
 @media (max-width: 720px) {
@@ -54,7 +145,39 @@
             'eventImg event';
     }
 
-    .fcgrid {
-        margin: 1em 1vw;
+    form {
+        font-size: 3vw;
+        border-radius: 1em;
     }
+
+    fieldset,
+    #joinus {
+        border-radius: 1em;
+        width: 84vw;
+    }
+    
+    fieldset fieldset {
+        display: grid;
+        width: 80vw;
+        grid-template-columns: 40vw 40vw;
+    }
+    
+    fieldset fieldset * {
+        height: 6vh;
+    }
+    
+    .checkboxes {
+        grid-template-columns: 10vw 70vw;
+    }
+    
+    .checkboxes label {
+        margin-left: 0vw;
+    }
+
+    #buttons input {
+        margin: .5em;
+        font-size: 1.5em;
+        height: 2em;
+    }
+
 }

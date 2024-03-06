@@ -42,12 +42,12 @@ body {
     padding: 0;
     display: flex;
     flex-direction: row;
-    font-size: 1.4em;
+    font-size: 2vw;
     margin-bottom: 2em;
 }
 
 .navigation li {
-    flex-basis: 20%;
+    flex-basis: 16.67%;
     margin: .1em;
     background-color: rgba(0, 0, 0, 0.55);
     border-radius: .5em;
@@ -99,7 +99,7 @@ a:hover {
     list-style-type: none;
     width: 100%;
     justify-content: center;
-    margin-left: -2em;
+    margin-left: 0em;
     font-size: .75em;
 }
 
@@ -131,6 +131,7 @@ footer {
         padding: 0;
         display: block;
         flex-direction: column;
+        font-size: 3vw;
     }
 
     .navigation li {
