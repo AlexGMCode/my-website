@@ -1,0 +1,60 @@
+#companydetails {
+    display: grid;
+    grid-template-areas:
+        'historyImg history'
+        'social socialImg'
+        'raidImg raid'
+        'event eventImg';
+}
+
+#zero {
+    grid-area: history;
+}
+
+#one {
+    grid-area: historyImg;
+}
+
+#two {
+    grid-area: social;
+}
+
+#three {
+    grid-area: socialImg;
+}
+
+#four {
+    grid-area: raid;
+}
+
+#five {
+    grid-area: raidImg;
+}
+
+#six {
+    grid-area: event;
+}
+
+#seven {
+    grid-area: eventImg;
+}
+
+.fcgrid {
+    width: 48vw;
+    justify-content: center;
+    margin: 4em 1vw;
+}
+
+@media (max-width: 720px) {
+    #companydetails {
+        grid-template-areas:
+            'historyImg history'
+            'socialImg social'
+            'raidImg raid'
+            'eventImg event';
+    }
+
+    .fcgrid {
+        margin: 1em 1vw;
+    }
+}
