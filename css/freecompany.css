@@ -139,10 +139,22 @@ fieldset fieldset * {
 @media (max-width: 720px) {
     #companydetails {
         grid-template-areas:
-            'historyImg history'
-            'socialImg social'
-            'raidImg raid'
-            'eventImg event';
+            'historyImg' 'history'
+            'socialImg' 'social'
+            'raidImg' 'raid'
+            'eventImg' 'event';
+    }
+    .fcgrid{
+        width: 92vw;
+        font-size: 6vw;
+    }
+
+    #zero, #two, #four, #six {
+        margin-top: 0;
+    }
+
+    #one, #three, #five, #seven {
+        margin-bottom: 0;
     }
 
     form {
