@@ -8,7 +8,12 @@
         'event eventImg';
 }
 
-h1, h2, h3, h4, p, ul{
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
     text-align: center;
     border-radius: 1em;
     background-color: rgba(0, 0, 0, 0.768);
@@ -16,15 +21,16 @@ h1, h2, h3, h4, p, ul{
     padding: 2vw;
 }
 
-h2, h3 {
+h2,
+h3 {
     background-color: #5b1919bf;
 }
 
-#fclore{
+#fclore {
     font-style: italic;
 }
 
-#fclist{
+#fclist {
     list-style: inside circle;
 }
 
@@ -72,7 +78,7 @@ h2, h3 {
     padding: 1vw;
 }
 
-.fcgrid img{
+.fcgrid img {
     margin: 0;
     padding: 0;
 }
@@ -92,13 +98,21 @@ form {
     border-radius: 1em;
 }
 
+form input,
+form option,
+form select,
+form label,
+::placeholder {
+    font-size: 2vw;
+}
+
 fieldset,
 #joinus {
     border-radius: 1em;
     width: 42vw;
 }
 
-#joinus{
+#joinus {
     background-color: transparent;
     font-size: 1.7vw;
 }
@@ -111,31 +125,32 @@ fieldset fieldset {
 }
 
 fieldset fieldset * {
-    height: 2.5vw;
-    margin: 1vw 0vw;
+    height: auto;
+    margin: .5em 0;
 }
 
 .checkboxes {
-    grid-template-columns: 10vw 30vw;
+    grid-template-columns: 1fr 3fr;
 }
 
 .checkboxes label {
-    margin-left: -2vw;
+    margin-left: 0;
 }
 
 .checkboxes input {
-    margin-top: .8vw;
-    margin-right: 0;
+    margin-top: .5em;
+    margin-right: 1em;
 }
 
 #buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
 }
 
 #buttons input {
     margin: .5em;
-    font-size: 1.5em;
+    font-size: 2vw;
     height: 2em;
 }
 
@@ -148,16 +163,23 @@ fieldset fieldset * {
             'raidImg' 'raid'
             'eventImg' 'event';
     }
-    .fcgrid{
+
+    .fcgrid {
         width: 92vw;
         font-size: 6vw;
     }
 
-    #zero, #two, #four, #six {
+    #zero,
+    #two,
+    #four,
+    #six {
         margin-top: 0;
     }
 
-    #one, #three, #five, #seven {
+    #one,
+    #three,
+    #five,
+    #seven {
         margin-bottom: 0;
     }
 
@@ -175,29 +197,29 @@ fieldset fieldset * {
     #joinus {
         font-size: 4vw;
     }
-    
+
     fieldset fieldset {
         display: grid;
         width: 80vw;
         grid-template-columns: 40vw 40vw;
     }
-    
+
     fieldset fieldset * {
         height: 6vh;
     }
-    
-    .checkboxes {
-        grid-template-columns: 10vw 70vw;
-    }
-    
-    .checkboxes label {
-        margin-left: 0vw;
+
+    form input,
+    form option,
+    form select,
+    form label,
+    ::placeholder {
+        font-size: 4vw;
     }
 
     #buttons input {
         margin: .5em;
-        font-size: 1.5em;
-        height: 2em;
+        font-size: 4vw;
+        height: 4em;
     }
 
 }
