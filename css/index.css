@@ -1,3 +1,5 @@
+/* Page Layout */
+
 #intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,6 +71,8 @@ html {
     position: relative;
 }
 
+
+/* Background Video + main content overlay */
 #opening {
     position: fixed;
     top: 50%;
@@ -91,6 +95,7 @@ html {
     background-color: transparent;
 }
 
+/* System Requirements Table */
 #syshead {
     background-color: #192B5BBF;
     text-align: center;

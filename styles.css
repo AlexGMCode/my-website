@@ -1,6 +1,6 @@
 /* CSS for common elements for all web pages, including navigation, consitent fonts, and common footers */
 /* specific css for each page can be found in the css folder */
-
+/* Universal Layout and fonts */
 body {
     font-family: "Crimson Text", serif;
     font-weight: 600;
@@ -35,6 +35,8 @@ body {
     max-width: fit-content;
 }
 
+
+/* Navigation */
 .navigation {
     list-style-type: none;
     text-align: center;
@@ -80,6 +82,7 @@ a:hover {
     transform: scale(1.04);
 }
 
+/* Dropdown menu Layout */
 #jdrop,
 #adrop,
 #fdrop {
@@ -124,6 +127,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.55);
 }
 
+/* Current page highlight */
 #current {
     background-color: #D01031;
 }
