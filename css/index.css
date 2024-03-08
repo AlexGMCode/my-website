@@ -125,6 +125,7 @@ td {
     font-style: normal;
     color: rgb(234, 45, 45);
     background-color: rgba(0, 0, 0, 0.768);
+    text-shadow: 1px 1px 0 gold;
     border: transparent solid;
     border-radius: 1em;
 }

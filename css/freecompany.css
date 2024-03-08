@@ -1,3 +1,45 @@
+/* Quick Nav Styles */
+#quick {
+    border-style: ridge;
+    border-color: gray;
+    border-radius: 1em;
+    width: 70%;
+    display: block;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 1em;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+
+}
+
+.quick-nav {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.quick-nav a {
+    display: block;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    border-style: ridge;
+    border-radius: .5em;
+    border-color: darkgray;
+    padding: auto;
+    max-height: 1.5em;
+}
+
+.quick-nav li {
+    flex-basis: 100%;
+    margin: .1em;
+}
+
 /* Intro to Free Companies Layout */
 #companydetails {
     display: grid;
@@ -8,7 +50,7 @@
         'event eventImg';
 }
 
-h2,
+h3,
 #fcintro {
     text-align: center;
     border-radius: 1em;
@@ -17,12 +59,13 @@ h2,
     padding: 2vw;
 }
 
-h2 {
+h3 {
     background-color: #5b1919bf;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
-#fclore, #h4ital {
+#fclore,
+#h4ital {
     font-style: italic;
 }
 
@@ -161,7 +204,7 @@ fieldset fieldset * {
             'eventImg' 'event';
     }
 
-    h2{
+    h3 {
         font-size: 2em;
     }
 
@@ -223,4 +266,10 @@ fieldset fieldset * {
         height: 4em;
     }
 
+}
+
+@media (pointer: fine) {
+    #quick {
+        display: none;
+    }
 }

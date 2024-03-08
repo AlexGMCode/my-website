@@ -71,10 +71,8 @@ h4 {
     #activities {
         grid-template-columns: 1fr;
     }
-}
 
-@media (max-width: 720px) {
     .image-overlay-container>h4 {
-        font-size: 2.6vw;
+        font-size: 3.4vw;
     }
 }
