@@ -70,7 +70,8 @@ h3 {
 }
 
 #fclist {
-    list-style: inside circle;
+    list-style: inside;
+    list-style-image: url(../images/favicon.png);
 }
 
 /* My FC Layout */
