@@ -75,33 +75,11 @@ h4 img {
     max-width: fit-content;
 }
 
-#tanks h4 {
-    font-size: 1.5em;
-    text-align: center;
-    border-style: solid;
-    border-radius: 1em;
-    margin: .5em;
-    background-color: rgba(0, 0, 139, 0.75);
-}
-
-#healers h4 {
-    font-size: 1.5em;
-    text-align: center;
-    border-style: solid;
-    border-radius: 1em;
-    margin: .5em;
-    background-color: rgba(0, 100, 0, 0.75);
-}
-
-.dps h4 {
-    font-size: 1.5em;
-    text-align: center;
-    border-style: solid;
-    border-radius: 1em;
-    margin: .5em;
-    background-color: rgba(139, 0, 0, 0.75);
-}
-
+#tanks h4,
+#healers h4,
+#melee h4,
+#range h4,
+#casters h4,
 #crafters h4,
 #gatherers h4 {
     font-size: 1.5em;
@@ -109,6 +87,22 @@ h4 img {
     border-style: solid;
     border-radius: 1em;
     margin: .5em;
+}
+
+#tanks h4 {
+   background-color: rgba(0, 0, 139, 0.75);
+}
+
+#healers h4 {
+    background-color: rgba(0, 100, 0, 0.75);
+}
+
+.dps h4 {
+    background-color: rgba(139, 0, 0, 0.75);
+}
+
+#crafters h4,
+#gatherers h4 {
     background-color: rgba(128, 128, 128, 0.75);
 }
 

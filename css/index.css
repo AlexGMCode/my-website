@@ -20,10 +20,6 @@
     background-color: rgba(0, 0, 0, 0.55);
 }
 
-#intro>img {
-    opacity: 95%;
-}
-
 #welcome {
     display: grid;
     grid-template-columns: 1fr;
@@ -58,7 +54,6 @@
 }
 
 
-
 #eorzea,
 #story {
     padding: .5em
@@ -69,6 +64,38 @@ html {
     height: 100%;
     margin: 0;
     position: relative;
+}
+
+#ffxiv {
+    display: block;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    font-family: JupiterBold;
+    font-style: normal;
+    color: rgb(234, 45, 45);
+    background-color: rgba(0, 0, 0, 0.768);
+    text-shadow: 1px 1px 0 gold;
+    border: transparent solid;
+    border-radius: 1em;
+}
+
+#activites {
+    display: flex;
+    list-style-position: inside;
+    justify-content: center;
+}
+
+#start ul {
+    list-style: inside;
+    list-style-image: url(../images/favicon.png);
+}
+
+#activities li {
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 
@@ -119,38 +146,6 @@ td {
 
 .odd {
     background-color: rgba(255, 255, 255, 0.35);
-}
-
-#ffxiv {
-    display: block;
-    width: 50%;
-    margin-right: 25%;
-    margin-left: 25%;
-    font-family: JupiterBold;
-    font-style: normal;
-    color: rgb(234, 45, 45);
-    background-color: rgba(0, 0, 0, 0.768);
-    text-shadow: 1px 1px 0 gold;
-    border: transparent solid;
-    border-radius: 1em;
-}
-
-#activites {
-    display: flex;
-    list-style-position: inside;
-    justify-content: center;
-}
-
-#start ul {
-    list-style: inside;
-    list-style-image: url(../images/favicon.png);
-}
-
-#activities li {
-    text-align: left;
-    width: 20%;
-    margin-left: 40%;
-    margin-right: 40%;
 }
 
 @font-face {
