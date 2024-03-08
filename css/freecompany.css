@@ -8,12 +8,8 @@
         'event eventImg';
 }
 
-h1,
 h2,
-h3,
-h4,
-p,
-ul {
+#fcintro {
     text-align: center;
     border-radius: 1em;
     background-color: rgba(0, 0, 0, 0.768);
@@ -21,12 +17,12 @@ ul {
     padding: 2vw;
 }
 
-h2,
-h3 {
+h2 {
     background-color: #5b1919bf;
+    font-size: 3vw;
 }
 
-#fclore {
+#fclore, #h4ital {
     font-style: italic;
 }
 
@@ -115,6 +111,7 @@ fieldset,
 #joinus {
     background-color: transparent;
     font-size: 1.7vw;
+    margin: 1em;
 }
 
 fieldset fieldset {
@@ -162,6 +159,10 @@ fieldset fieldset * {
             'socialImg' 'social'
             'raidImg' 'raid'
             'eventImg' 'event';
+    }
+
+    h2{
+        font-size: 2em;
     }
 
     .fcgrid {
