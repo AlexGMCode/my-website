@@ -83,8 +83,8 @@ a:hover {
     position: absolute;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.55);
     border-radius: .5em;
+    width: 90%;
 }
 
 #jobs:hover #jdrop, #allies:hover #adrop {
